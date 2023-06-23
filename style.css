@@ -6,11 +6,13 @@ body {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 7fr;
     gap: 0px;
+
 }
 
 body > div {
     background-color: yellow;
     border: 1px solid black;
+    padding: 1rem;;
 }
 
 .sidebar {
@@ -22,6 +24,17 @@ body > div {
     flex-wrap: nowrap;
     align-items: center;
     align-content: space-between;
+    color: purple;
+    text-align: center;
+    
+}
+
+.user_settings, .user_section {
+    margin-top: 60%;
+}
+
+.sidebar li {
+    margin-top: 1rem;
 }
 
 .header {
@@ -33,6 +46,7 @@ body > div {
 .content {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: pink;
 }
 
 ul {
@@ -60,3 +74,39 @@ ul {
     
 }
 
+.projects, .announcements {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    background-color: aquamarine;
+
+}
+
+.card, .announcement{
+    width: 100%;
+    place-self: center;
+    align-self: center;
+    border: solid grey 1px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: aliceblue;
+    height: 100%;
+
+}
+
+h3 {
+    color: rgb(76, 65, 228);
+    
+}
+
+.searchbar input{
+    width: 99%;
+    border-radius: 0.5rem;
+    border: solid 1px grey;
+    padding: 0.3rem;
+}
+
+h1 {
+    text-align: center;
+}
